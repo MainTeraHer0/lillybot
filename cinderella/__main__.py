@@ -38,6 +38,9 @@ Hey There *{}*.
 _select one of the settings that you want to change.
 
 
+""".format(dispatcher.bot.first_name, "" if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
+
+
 
 VERSION = "6.0"
 
