@@ -179,6 +179,7 @@ def send_start(bot, update):
     first_name = update.effective_user.first_name 
     text = PM_START_TEXT
 
+    keyboard = [[inlineKeyboardButton(text="➕add me to a Group ➕",=url="t.me/http://t.me/{}?startgroup=true".format(bot.username))]]
     keyboard = [[InlineKeyboardButton(text="🤝Help",callback_data="help_back"),InlineKeyboardButton(text="🛡Creator🛡",url="https://t.me/Surv_ivor")]]
     keyboard += [[InlineKeyboardButton(text="🌐Connect Group", callback_data="main_connect"),InlineKeyboardButton(text="⚜️Add Me⚜️",url="t.me/{}?startgroup=true".format(bot.username))]]
 
